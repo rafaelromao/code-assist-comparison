@@ -83,6 +83,23 @@ section {
     margin-bottom: 0.75rem;
 }
 
+.roi-item li {
+    margin-bottom: 1.5rem;
+}
+
+.roi-item strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.explanation {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.5;
+}
+
 .security-features {
     max-width: 1000px;
     margin: 2rem auto;
