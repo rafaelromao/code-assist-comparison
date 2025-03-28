@@ -4,6 +4,10 @@
     --background-color: #f8fafc;
     --text-color: #1e293b;
     --border-color: #e2e8f0;
+    --bg-primary: #f1f5f9;
+    --bg-secondary: #e2e8f0;
+    --bg-accent: #f8fafc;
+    --text-primary: #1e293b;
 }
 
 * {
@@ -57,51 +61,90 @@ h2 {
 
 .comparison-table {
     overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+.comparison-table td:first-child {
+    font-weight: 500;
+    color: var(--text-primary);
 }
 
 .pricing-table {
     overflow-x: auto;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    margin-bottom: 2rem;
 }
 
 .pricing-table table {
     width: 100%;
     border-collapse: collapse;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table th {
-    background: var(--primary-color);
-    color: white;
-    padding: 1rem;
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 1rem 1.5rem;
     text-align: left;
-}
-
-.pricing-table td {
-    padding: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.pricing-table tr:hover {
-    background: #f8fafc;
-}
-
-.pricing-notes {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: white;
-    border-radius: 8px;
     border: 1px solid var(--border-color);
 }
 
-.pricing-notes p {
+.pricing-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+.pricing-notes {
+    background-color: var(--bg-accent);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.pricing-notes p,
+.pricing-notes ul {
     margin-bottom: 1rem;
 }
 
 .pricing-notes ul {
-    list-style: disc;
-    margin-left: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .pricing-notes li {
@@ -232,6 +275,55 @@ th {
     color: var(--primary-color);
     position: absolute;
     left: 0;
+}
+
+.feature-comparison {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--bg-accent);
+    border-radius: 8px;
+}
+
+.feature-comparison h4 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.feature-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: var(--bg-primary);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-comparison th,
+.feature-comparison td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.feature-comparison th {
+    background-color: var(--bg-secondary);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.feature-comparison tr:nth-child(even) {
+    background-color: var(--bg-secondary);
+}
+
+.feature-item h4 {
+    color: var(--text-primary);
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature-item h4:first-of-type {
+    margin-top: 1rem;
 }
 
 footer {
