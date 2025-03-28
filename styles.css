@@ -573,6 +573,75 @@ footer {
     margin-top: 3rem;
 }
 
+/* Risks and Considerations Section */
+.risks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.risk-item {
+    background-color: var(--bg-accent);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.risk-item h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.risk-item ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.risk-item li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.recommendation-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-primary);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 0 4px 4px 0;
+}
+
+.general-guidelines {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background-color: var(--bg-accent);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.general-guidelines h3 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.general-guidelines ul {
+    padding-left: 1.5rem;
+}
+
+.general-guidelines li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.general-guidelines strong {
+    color: var(--text-primary);
+}
+
 @media (max-width: 768px) {
     header {
         padding: 2rem 0;
