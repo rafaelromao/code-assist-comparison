@@ -8,6 +8,8 @@
     --bg-secondary: #e2e8f0;
     --bg-accent: #f8fafc;
     --text-primary: #1e293b;
+    --primary-color-dark: #1d4ed8;
+        /* Define the darker shade here */
 }
 
 /* Layout improvements */
@@ -270,11 +272,24 @@ nav {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s ease;
+        /* Added ease for smoother transition */
+        opacity: 1;
+        /* Ensure it's visible by default */
+        visibility: visible;
+        /* Ensure it's visible by default */
+        z-index: 1;
+        /* Ensure it's above other elements */
 }
 
 .cta-button:hover {
     background-color: var(--primary-color-dark);
+    opacity: 1;
+        /* Ensure it remains visible on hover */
+        visibility: visible;
+        /* Ensure it remains visible on hover */
+        z-index: 1;
+        /* Ensure it's above other elements */
 }
 
 .cta-button.secondary {
